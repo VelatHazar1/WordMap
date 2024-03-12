@@ -1,9 +1,10 @@
+import Main from "./Main/page";
 import SideBar from "../components/SideBar";
 
 export default function Home() {
   return (
-    <div className="flex">
-      <SideBar></SideBar>
+    <div>
+      <Main></Main>
     </div>
   );
 }

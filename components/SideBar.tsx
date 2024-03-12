@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 const Home = () => {
   const [open, setOpen] = useState(true);
   return (
-    <section className="flex gap-6">
+    <section className="flex gap-6 fixed	 ">
       <div
         className={`bg-[#C1D3FE] min-h-screen ${
           !open ? "w-72" : "w-16"
