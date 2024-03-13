@@ -2,12 +2,13 @@
 
 import { useState } from "react";
 import { AlignRight } from "lucide-react";
+import Link from "next/link";
 
 import { Button } from "@/components/ui/button";
 const Home = () => {
   const [open, setOpen] = useState(true);
   return (
-    <section className="flex gap-6 fixed	 ">
+    <section className="flex gap-6 fixed	z-50	  ">
       <div
         className={`bg-[#C1D3FE] min-h-screen ${
           !open ? "w-72" : "w-16"
@@ -57,6 +58,7 @@ const Home = () => {
           >
             {!open ? "Proficiency" : "C2"}
           </Button>
+
           <Button
             variant="outline"
             className="bg-white text-black rounded-2xl	border-inherit"
@@ -67,7 +69,9 @@ const Home = () => {
               transform: open ? "scale(0)" : "scale(1)",
             }}
           >
-            Create Your Own
+            <Link href={"/"}>
+              <p>Main Page</p>
+            </Link>
           </Button>
         </div>
       </div>
