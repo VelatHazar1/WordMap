@@ -23,7 +23,7 @@ const Page = () => {
     if (chosen.length === 2) {
       checkForMatch();
     }
-  }, [cards, chosen]);
+  }, [cards, chosen, solved]);
 
   const handleClick = (index: number) => {
     setChosen([...chosen, index]);

@@ -46,10 +46,12 @@ const main = () => {
         </Button>
 
         <Button className="bg-white py-10 w-56 rounded-2xl hover:bg-white">
-          <div className="flex items-center justify-start gap-5 ">
-            <Joystick />
-            <h1>Hangman</h1>
-          </div>
+          <Link href="/Hangman">
+            <div className="flex items-center justify-start gap-5 ">
+              <Joystick />
+              <h1>Hangman</h1>
+            </div>
+          </Link>
         </Button>
         <Button className="bg-white py-10 w-56 rounded-2xl hover:bg-white">
           {" "}
