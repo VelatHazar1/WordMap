@@ -1,19 +1,19 @@
 export const elementaryWords = [
-  { id: 1, word: "Cat" },
-  { id: 2, word: "Dog" },
-  { id: 3, word: "Ball" },
-  { id: 4, word: "Book" },
-  { id: 5, word: "Tree" },
-  { id: 6, word: "House" },
+  { id: 1, word: "Cat", meaning: "Kedi" },
+  { id: 2, word: "Dog", meaning: "Köpek" },
+  { id: 3, word: "Ball", meaning: "Top" },
+  { id: 4, word: "Book", meaning: "Kitap" },
+  { id: 5, word: "Tree", meaning: "Ağaç" },
+  { id: 6, word: "House", meaning: "Ev" },
 ];
 
 export const elementaryWordsTurkishMeanings = [
-  { id: 1, word: "Kedi" },
-  { id: 2, word: "Köpek" },
-  { id: 3, word: "Top" },
-  { id: 4, word: "Kitap" },
-  { id: 5, word: "Ağaç" },
-  { id: 6, word: "Ev" },
+  { id: 7, word: "Kedi", meaning: "Cat" },
+  { id: 8, word: "Köpek", meaning: "Dog" },
+  { id: 9, word: "Top", meaning: "Ball" },
+  { id: 10, word: "Kitap", meaning: "Book" },
+  { id: 11, word: "Ağaç", meaning: "Tree" },
+  { id: 12, word: "Ev", meaning: "House" },
 ];
 export const hangManWords = [
   "able",

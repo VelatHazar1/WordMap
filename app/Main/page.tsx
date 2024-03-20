@@ -7,6 +7,8 @@ import { ReplaceAll } from "lucide-react";
 import { LayoutDashboard } from "lucide-react";
 import { Album } from "lucide-react";
 import { Speech } from "lucide-react";
+import AudioPlayer from "@/components/AudioPlayer";
+
 import Link from "next/link";
 
 import * as React from "react";
@@ -33,11 +35,15 @@ const main = () => {
       setIsFlipped(!isFlipped);
     }
   };
+
+  const stopPropagation = (event: React.MouseEvent) => {
+    event.stopPropagation();
+  };
   return (
     <div className="flex flex-col justify-center	items-center	w-full h-screen	 gap-10	">
       <div className="flex gap-5">
         <Button className="bg-white py-10 w-56	 rounded-2xl hover:bg-white">
-          <Link href="/Match">
+          <Link href="/Match" className="mr-5">
             <div className="flex items-center justify-start gap-5">
               <CopySlash />
               <h1>Match</h1>
@@ -54,7 +60,6 @@ const main = () => {
           </Link>
         </Button>
         <Button className="bg-white py-10 w-56 rounded-2xl hover:bg-white">
-          {" "}
           <div className="flex items-center justify-start gap-5 ">
             <BookHeadphones />
             <h1> SoundScript</h1>
@@ -97,8 +102,11 @@ const main = () => {
                   <Card className="flip-card-front w-[45rem] ">
                     <CardContent className="flex items-center justify-center flex-col p-6 bg-white rounded-2xl h-[19rem] ">
                       <div className="flex flex-col justify-center items-center w-[100%] h-[100%]">
-                        <div className="flex  pr-3	 	justify-end	  h-[40%] w-[100%]">
-                          <Speech className="cursor-pointer"></Speech>
+                        <div
+                          className="flex  pr-3	 	justify-end	  h-[40%] w-[100%]"
+                          onClick={(e) => e.stopPropagation()}
+                        >
+                          <AudioPlayer audioPath="/voices/breathe.mp3" />
                         </div>
 
                         <span className="text-4xl font-semibold h-[60%] ">
@@ -129,8 +137,11 @@ const main = () => {
                   <Card className="flip-card-front w-[45rem] ">
                     <CardContent className="flex items-center justify-center flex-col p-6 bg-white rounded-2xl h-[19rem] ">
                       <div className="flex flex-col justify-center items-center w-[100%] h-[100%]">
-                        <div className="flex  pr-3	 	justify-end	  h-[40%] w-[100%]">
-                          <Speech></Speech>
+                        <div
+                          className="flex  pr-3	 	justify-end	  h-[40%] w-[100%]"
+                          onClick={(e) => e.stopPropagation()}
+                        >
+                          <AudioPlayer audioPath="/voices/gentle.mp3" />
                         </div>
 
                         <span className="text-4xl font-semibold h-[60%] ">
@@ -159,8 +170,11 @@ const main = () => {
                   <Card className="flip-card-front w-[45rem] ">
                     <CardContent className="flex items-center justify-center flex-col p-6 bg-white rounded-2xl h-[19rem] ">
                       <div className="flex flex-col justify-center items-center w-[100%] h-[100%]">
-                        <div className="flex  pr-3	 	justify-end	  h-[40%] w-[100%]">
-                          <Speech></Speech>
+                        <div
+                          className="flex  pr-3	 	justify-end	  h-[40%] w-[100%]"
+                          onClick={(e) => e.stopPropagation()}
+                        >
+                          <AudioPlayer audioPath="/voices/determined.mp3" />
                         </div>
 
                         <span className="text-4xl font-semibold h-[60%] ">

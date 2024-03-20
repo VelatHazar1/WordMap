@@ -22,52 +22,35 @@ const Home = () => {
           />
         </div>
         <div className="mt-4 flex flex-col gap-4 relative">
-          <Button
-            variant="outline"
-            className="bg-white text-black rounded-2xl	border-inherit	"
-          >
+          <Button variant="ghost" className="bg-white text-black rounded-2xl	 	">
             {!open ? "Elementary" : "A1"}
           </Button>
-          <Button
-            variant="outline"
-            className="bg-white text-black rounded-2xl	border-inherit	"
-          >
+          <Button variant="ghost" className="bg-white text-black rounded-2xl		">
             {!open ? "Pre-Intermediate" : "A2"}
           </Button>
-          <Button
-            variant="outline"
-            className="bg-white text-black rounded-2xl	border-inherit	"
-          >
+          <Button variant="ghost" className="bg-white text-black rounded-2xl		">
             {!open ? "Intermediate" : "B1"}
           </Button>
-          <Button
-            variant="outline"
-            className="bg-white text-black rounded-2xl	border-inherit	"
-          >
+          <Button variant="ghost" className="bg-white text-black rounded-2xl		">
             {!open ? "Upper-Intermediate" : "B2"}
           </Button>
-          <Button
-            variant="outline"
-            className="bg-white text-black rounded-2xl	border-inherit	"
-          >
+          <Button variant="ghost" className="bg-white text-black rounded-2xl		">
             {!open ? "Advanced" : "C1"}
           </Button>
-          <Button
-            variant="outline"
-            className="bg-white text-black rounded-2xl	border-inherit	"
-          >
+          <Button variant="ghost" className="bg-white text-black rounded-2xl		">
             {!open ? "Proficiency" : "C2"}
           </Button>
 
           <Button
-            variant="outline"
-            className="bg-white text-black rounded-2xl	border-inherit"
+            variant="ghost"
+            className="bg-white text-black rounded-2xl	"
             style={{
               transition:
                 "opacity 0.3s ease-in-out, transform 0.3s ease-in-out",
               opacity: open ? 0 : 1,
               transform: open ? "scale(0)" : "scale(1)",
             }}
+            onClick={() => setOpen(!open)}
           >
             <Link href={"/"}>
               <p>Main Page</p>
