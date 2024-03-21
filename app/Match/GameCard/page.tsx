@@ -17,7 +17,7 @@ const Restart = ({ onRestart }: RestartProps) => {
           </CardDescription>
           <Button
             onClick={onRestart}
-            className="px-4 py-2 bg-[#C1D3FE] text-black rounded hover:bg-[#e2eafc] focus:outline-none text-2xl  "
+            className="px-4 py-2 bg-[#C1D3FE] text-black rounded-3xl hover:bg-[#e2eafc] focus:outline-none text-2xl  "
           >
             Restart Game
           </Button>
